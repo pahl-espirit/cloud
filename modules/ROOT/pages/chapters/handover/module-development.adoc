@@ -1,0 +1,158 @@
+=== Module Development
+For module development in your cloud environment an initial setup is required.
+Please contact our Technical Support. 
+
+Please let us know the *name of the git-repository*.
+
+Each Code repository initially comes with two branches:
+
+* The development branch is the continuous integration branch connected through the build server to DEV stage.
+* The master branch is the release branch and connected to QA stage.
+If you need the  module on your productive stage, please contact our Technical Support including the following information
++
+*Necessary information about the FSM module*
++
+** Module name
+** Group-ID
+** Artifact-ID
+** Artifact-Classifier
+** Version
+
+=== Setup local Deployment
+To resolve FirstSpirit specific dependencies you'll have to add the e-Spirit Cloud artifactory to your maven settings.
+Check out the current development branch of your desired module.
+You'll find our git stash here https://git.e-spirit.hosting   
+
+=== Invoke Build Pipeline
+
+==== Generally
+All projects in our git supports the gitflow workflow, which we recommend.
+Every push you'll make to the development branch will trigger the build server to try to build and deploy your module to your FirstSpirit DEV stage.
+The result of the successful build will be stored in your internal snapshot artifactory.
+
+The module needs to have unit tests to make the build successful.
+
+[NOTE]
+====
+Please note that after every deployment an immediate restart of the FirstSpirit server is needed in ordner for all the changes to take effect.
+====
+
+==== Mirroring Git repository without a local copy
+If you haven’t cloned the repository before, you can mirror it to a new home by 
+
+[source,GIT]
+.Git commands
+----
+$git clone --mirror git@git.e-spirit.hosting/upstream-repository.git
+
+$ cd upstream-repository.git
+$ git push --mirror git@git.e-spirit.hosting/new-location.git
+----
+
+This will get all the branches and tags that are available in the upstream repository and will replicate those into the new location.
+
+[IMPORTANT]
+====
+Don’t use `git push --mirror` in repositories that weren’t cloned by `--mirror` as well.
+It’ll overwrite the remote repository with your local references (and your local branches).
+This is not what we want.
+Read the next section to discover what to do in these cases.
+
+Also git clone `--mirror` is prefered over git clone `--bare` because the former also clones git notes and some other attributes.
+====
+
+
+==== Mirroring a git repository if you already have a local working copy
+By working copy, we mean a “normal” repository, in which you have the files that are being tracked into git and where you perform commands like `git add` and so on.
+
+In this case, you may have a lot of local branches and tags that you don’t want to copy to the new location.
+But you do have references to remote branches.
+You can view them with `git branches -r`.
+If you pay attention to that list, though, you may notice that you have a lot of branches that were already deleted in the upstream repository.
+Why?
+
+==== Cleaning old references to remote branches 
+By default, when you do a `git fetch` or `git pull`, git will not delete the references to branches that were deleted in the upstream repository 
+(you may view them in your `.git/refs/remotes` dir).
+We need to clean those old references before mirroring them to a new location.
+
+To do so, run `git fetch --prune`.
+
+This will update your references to the origin repository and also clean the stale branches reported by `git branch -r`.
+
+==== Finally mirroring the repository to a new location 
+Now we’re ready to send those updated references back to the `origin` repository:
+
+[source, GIT]
+----
+git push --prune 
+git@git.e-spirit.hosting:/new-location.git 
++refs/remotes/origin/*:refs/heads/*
++refs/tags/*:refs/tags/*
+----
+
+We want those references inside the `*.git/refs/remotes/origin*` to be the LOCAL references in the new location.
+The local references there will be stored in the `refs/heads` dir.
+Same thing happens to tags.
+
+The `+` sign indicates that we want to *overwrite* any reference there may already exist.
+`--prune` means we want to delete any reference that may exist there if we don’t have such reference in our `*refs/remotes/origin/**` (and tags) references.
+
+==== Best practises
+
+* Please do not push to the master branch.
+* Rather do a pull request from development to master branch.
+* Every push to the master branch will build a release which is stored in your internal artifactory.
+* This artifact gets installed on the QA stage.
+* To get the module installed on your FirstSpirit Production stage during next maintenance please file a ticket via help@e-spirit.com including following information 
+** Group-ID
+** Artifact-ID
+** Artifact-Classifier
+** Version
+
+:blank: 
+{blank}::
+_This step is necessary because of our Service Level Agreement._
+ 
+=== Module Development Pipeline
+
+.Module development pipeline
+image::images/dev_pipeline.png[]
+
+=== Setup your Maven tool to use e-Spirit Cloud Artifactory 
+
+* Please open following URL: +
+https://git.e-spirit.hosting/projects/CLOUD/repos/public/browse +
+_Only users with the role Git-User can access to this repository._
+* Navigate to the `maven-settings/settings.xml` file in the Bitbucket file browser.
+* Copy the content of the file or download it to your local maven directory.
+A common location for User Home Directory is `.m2/`.
++
+[NOTE]
+====
+For more information please have a look at the official documentation at https://maven.apache.org/settings.html.
+====
++
+* Further you need to replace the following placeholders: +
++
+[source,XML]
+.Placeholders
+----
+<server>
+	<username>CLOUD_USERNAME</username>
+	<password>CLOUD_ENCRYPTED_PASSWORD</password
+	<id>...</id>
+</server>
+----
++
+** `CLOUD_USERNAME`: This is your email address which represents your user name in FirstSpirit.
+** `CLOUD_ENCRYPTED_PASSWORD`: To generate your encrypted password, please
+*** click https://artifactory.e-spirit.hosting/artifactory/api/security/encryptedPassword[here]
+*** login with your FirstSpirit Credentials
+*** the generated password will appear
+** `CUSTOMER`: For the repository nodes, replace this value in following URLs with your lowercase customer name: https://artifactory.e-spirit.hosting/artifactory/CUSTOMER-release
+
+[NOTE]
+====
+For additional information about maven artifactory please have a look at https://maven.apache.org/guides/introduction/introduction-to-profiles.html[Maven Introduction].
+====

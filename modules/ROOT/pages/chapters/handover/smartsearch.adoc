@@ -1,0 +1,46 @@
+[[smartsearch]]
+== SmartSearch
+
+[IMPORTANT]
+====
+This service is usage-based.
+A valid license is required.
+====
+
+=== SmartSearch URLs/Credentials
+
+*Development (DEV)*
+
+[cols="20,80",width="80%"]
+.Development URLs
+|=======
+|Cockpit
+|\https://<customer>-dev-search.e-spirit.cloud/login.html
+
+|API-GW
+|\https://<customer>-dev-search-api.e-spirit.cloud/
+
+|User
+|
+
+|Password
+|
+|=======
+
+*Production (PROD)*
+
+[cols="20,80",width="80%"]
+.Production URLs
+|=======
+|Cockpit
+|\https://<customer>-search.e-spirit.cloud/login.html
+
+|API-GW
+|\https://<customer>-search-api.e-spirit.cloud/
+
+|User
+|
+
+|Password
+|
+|=======

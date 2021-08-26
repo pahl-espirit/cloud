@@ -1,0 +1,77 @@
+== Get Started
+Welcome to FirstSpirit Cloud - our Software as a Service (SaaS) environment.
+This document will guide you through the first steps, which are necessary to use FirstSpirit.
+
+=== Sign up/User management
+New accounts are created and managed by our Technical Support Team.
+To get access please create a ticket via https://help.e-spirit.com/[Jira Service Desk] or send an email to help@e-spirit.com.
+
+[NOTE]
+====
+For more information please have a look at <<help_at_e-spirit,Help @ e-Spirit>>.
+====
+
+// *********************** Sign in *********************** //
+=== Sign in
+After your account is created, you will get an email to activate your account first.
+
+*How to activate your account:*
+
+* Please open the URL https://accounts.e-spirit.cloud/
++
+.Password Self Service
+image::images/pw_self_service.png[]
+
+* Please enter your email address, which represents your FirstSpirit user name (e.g \myEmailAdress@e-spirit.com)
+* Afterwards you will receive an email to set your password +
+_Please check your spam folder, just in case the confirmation email got delivered there instead of your inbox._
+* Please set your password and make sure that no German Umlaut is used +
+_After changing the password no further email will be sent!_
+
+// *********************** Help @ e-Spirit *********************** //
+[[help_at_e-spirit]]
+=== Help @ e-Spirit
+If you have any technical issues, please contact our Technical Support.
+There are two ways to create a ticket:
+
+Create a Ticket via eMail::
+Please contact our Technical Support via email to help@e-spirit.com.
+
+Create a Ticket via Jira Service Desk/Sign up::
+Alternatively you can sign up to the https://help.e-spirit.com[Jira Service Desk] where you can also create a ticket.
+Here you can additionally *track and check* the status of your requests/tickets.
+
+[NOTE]
+====
+For more information please have a look at <<our_support_services,Our Support Services>>.
+====
+
+// *********************** Your FirstSpirit Environment *********************** //
+=== Your FirstSpirit Environment
+Your FirstSpirit Cloud includes three environments, which are described below.
+
+Development (DEV)::
+This is the area for Developers.
+
+Quality Assurance (QA)::
+This environment (also called staging or testing area) is a nearly exact replica of the production environment for testing and to ensure quality before transfer to the Production Environment.
+
+Production (PROD)::
+This is the area for creating and editing your content.
+Every content which is deployed/published is saved here.
+
+// *********************** New Projects *********************** //
+=== New Projects
+New projects are created by our Technical Support.
+If new projects are required, please create a ticket.
+
+Following information are needed:
+
+* *Project name* (defined by you; e.g `myProject`)
+* *On which stage the project is needed* (DEV/QA/PROD) 
+* *Which roles/user shall have access to this project*
+
+[NOTE]
+====
+For more information please have a look at <<roles_and_permissions,Roles & Permissions>>.
+====

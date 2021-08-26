@@ -1,0 +1,51 @@
+
+[[caas]]
+== CaaS Connect (Content as a Service)
+
+[IMPORTANT]
+====
+This service is usage-based.
+A valid CaaS license is required
+====
+
+The Content as a Service (hereafter referred to as CaaS) is the component that runs on the FirstSpirit server.
+It enables the compilation and dispatch of information to the https://docs.e-spirit.com/module/caas/CaaS_Platform_Documentation_EN.html[CaaS platform].
+The information concerns all new, changed or deleted editorial content of the used FirstSpirit project.
+
+CaaS offers companies the agility necessary for this customer communication.
+It enables the provision of content fragments and has an interface for their retrieval.
+Without any additional implementation effort, data can thus be reused indefinitely.
+Publishing to a targeted channel is no longer necessary.
+In accordance with the best-of-breed philosophy, the design and composition of the presented contents are thus completely detached from FirstSpirit.
+This increases independence, flexibility and speed in project implementation.
+
+[NOTE]
+====
+For further information please have a look at https://docs.e-spirit.com/module/caas/CaaS_Product_Documentation_EN.html[Content as a Service].
+====
+
+=== CaaS URLs
+Below you’ll find the CaaS URLs. +
+The URL for Preview and Live is the same 
+
+* *Development (DEV)* +
+\https://<customer>-dev-caas-api.e-spirit.cloud
+* *Quality Assurance (QA)* + 
+\https://<customer>-qa-caas-api.e-spirit.cloud
+* *Production (PROD)* +
+\https://<customer>-caas-api.e-spirit.cloud
+
+=== CaaS API Keys 
+To use CaaS, you need credentials to authorize.
+
+Development (DEV)::
+Live <CaaS-DEV-LIVE> +
+Preview <CaaS-DEV-PREVIEW>
+
+Quality Assurance (QA)::
+Live <CaaS-QA-LIVE> +
+Preview <CaaS-QA-PREVIEW>
+
+Production (PROD)::
+Live <CaaS-PROD-LIVE> +
+Preview <CaaS-PROD-PREVIEW>

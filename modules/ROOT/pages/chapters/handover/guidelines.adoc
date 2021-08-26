@@ -1,0 +1,9 @@
+== Guidelines
+
+=== Guideline for file readme.md
+
+* Artifact name/type - Short description of the artifact
+* General information - Purpose and scope of this extension/module
+* Installation und configuration - Which components and configurations are needed?
+* API references - external libraries including versions
+* Authors - Who implemented the module?

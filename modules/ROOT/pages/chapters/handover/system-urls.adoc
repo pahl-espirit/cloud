@@ -1,0 +1,80 @@
+== System URLs
+Below you will find the most important URLs for your Cloud Environment.
+
+// *********************** FirstSpirit Landingpage/Stages *********************** //
+=== FirstSpirit Landingpage/Stages
+Your FirstSpirit stages are reachable via following URLs:
+
+* Development (DEV) +
+\https://<customer>dev.e-spirit.hosting
+* Quality Assurance (QA) +
+\https://<customer>qa.e-spirit.hosting
+* Production (PROD) +
+\https://<customer>.e-spirit.hosting
+
+// *********************** Developer URLs *********************** //
+=== Developer URLs
+
+==== Build-Pipeline / Logging
+
+* Logging GUI +
+\https://<customer>-logging.e-spirit.hosting
+* Git-Repository +
+https://git.e-spirit.hosting
+* Bamboo +
+https://ci.e-spirit.hosting
+* Artifactory-URL +
+https://artifactory.e-spirit.hosting
+
+[NOTE]
+====
+There is no web interface for Artifactory; the URL appears here only for completeness.
+The URL can still be relevant for module development.
+====
+
+==== CloudFront URLs/Configuration (S3 Deployment)
+
+*Development (DEV)*
+
+[cols="40,60",width="60%"]
+.Development URLs
+|=======
+|Target Platform S3 Bucket
+|<customer>dev.e-spirit.cloud
+
+|Base URL
+|\https://<customer>dev.e-spirit.cloud/
+
+|Distribution ID
+|<CloudFront Distributions ID DEV>
+|=======
+
+*Quality Assurance (QA)*
+
+[cols="40,60",width="60%"]
+.QA URLs
+|=======
+|Target Platform S3 Bucket
+|<customer>qa.e-spirit.cloud
+
+|Base URL
+|\https://<customer>qa.e-spirit.cloud/
+
+|Distribution ID
+|<CloudFront Distributions ID QA>
+|=======
+
+*Production (PROD)*
+
+[cols="40,60",width="60%"]
+.Production URLs
+|=======
+|Target Platform S3 Bucket
+|<customer>prod.e-spirit.cloud
+
+|Base URL
+|\https://<customer>prod.e-spirit.cloud/
+
+|Distribution ID
+|<CloudFront Distributions ID PROD>
+|=======

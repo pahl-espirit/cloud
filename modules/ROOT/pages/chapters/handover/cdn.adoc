@@ -1,0 +1,53 @@
+[[cdn]]
+== Content Delivery Network (CDN)
+
+[IMPORTANT]
+====
+This service is usage-based.
+A valid license is required.
+====
+
+=== General
+For Content Delivery Network (hereafter referred to as CDN) and website hosting you can use your own domain.
+For this we need the SSL certificate for the domain.
+Please send us your certificate via email to help@e-spirit.com.
+
+On the customer side a custom CNAME has to be added with the CDN URL.
+The URL is usually \https://<customer>.e-spirit.cloud.  
+
+A separate CDN URL is required for each TLD (TopLevelDomain).
+It is important to choose the best project architecture at the very beginning.
+In case of international and multilingual sites, the following best practice is recommended: `<COUNTRY>` / `<LANGUAGE>` / `Content`. 
+
+In this way, the TLDs can be set up as root for the respective country. 
+
+The FirstSpirit Cloud CDN includes further options like:  
+
+* Deployments of FirstSpirit Cloud systems into an S3 Bucket (via module aws-services-s3) 
+* Delivery of a S3 deployment for setting up error pages
+* Cache invalidation (also via module aws-services-s3) +
+extension by forwarding of requests from wildcard (/*) to `/index.html`
+* Securing deployments via Basic Auth 
+* Custom redirects (in combination with module aws-services-url redirect)
+* Media Delivery for CaaS Content
+ 
+=== Error pages 
+Currently the FirstSpirit Cloud CDN supports the following error pages (S3 Bucket) only.
+Error pages can be configured/entered in FirstSpirit.
+
+* `HTTP 403 /error-pages/403.html`
+* `HTTP 404 /error-pages/404.html`
+ 
+=== Redirects
+For various reasons it can be useful to set up redirects.
+However, since these cannot be taken into account via the CDN caching, but are mirrored via the FirstSpirit content, it is necessary to use the module aws-services-url redirect.
+
+The following redirects are currently supported: 
+
+* `HTTP 301 Moved Permanently`
+* `HTTP 302 Found (Moved Temporarily)`
+
+[NOTE]
+====
+Redirects can be configured/entered in FirstSpirit.
+====

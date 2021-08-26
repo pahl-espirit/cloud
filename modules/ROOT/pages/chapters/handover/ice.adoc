@@ -1,0 +1,19 @@
+[[ice]]
+== Intelligent Content Engine (ICE)
+
+[IMPORTANT]
+====
+This service is usage-based.
+A valid license is required.
+====
+
+The Intelligent Content Engine module provides FirstSpirit with numerous functions that allow editors to represent even the most complex use cases relating to A/B testing, real-time targeting, and personalization.
+Despite the complexity, you can take full advantage of the benefits of FirstSpirit via the cloud-based implementation, even at times of unpredictable load peaks:
+The Intelligent Content Engine does not place additional strain on your current hardware.
+Simple things remain simple and complex things become possible.
+Thanks to the integration into FirstSpirit, the highly dynamic system remains very easy to manage - even without in-depth knowledge of the system.
+
+[NOTE]
+====
+For further information please have a look at https://docs.e-spirit.com/ice/IntelligentContentEngine.html[FirstSpirit ICE].
+====

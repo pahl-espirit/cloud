@@ -1,0 +1,46 @@
+[[roles_and_permissions]]
+== Roles and Permissions
+
+// *********************** Default groups *********************** //
+=== Default groups
+This is a list of default groups. 
+These are best practise advice and can be used or extended individually. 
+
+Editorial Groups::
+*Editor* can manage, edit and request content for release +
+*Chief-Editor* can manage, edit and release content for publishing
+
+Administrators::
+*Project-Admin* has full control at project level
+
+Developer Groups::
+*GIT User* has access to Bitbucket & Bamboo +
+*Template Distribution User* is able to transfer templates (Page Templates, Section Templates, etc.) from one stage to another
+
+////
+kein interner Link mehr
+Url hinzufügen, sobald alle Dokumente online sind
+
+[NOTE]
+====
+For more information please have a look at <<distribution,Template Distribution>>.
+====
+////
+
+// *********************** Create or change user accounts *********************** //
+=== Create or change user accounts
+New or existing user accounts are managed by our Technical Support.
+For new accounts or for changes on existing accounts, please create a ticket which should contain the following information
+
+* First name
+* Last name
+* email address
+* Role (e.g. chief-editor)
+* Stage (Development, Quality Assurance, Production)
+* Additional Role (in case of existing accounts)
+* Role to remove (in case of existing accounts)
+
+[NOTE]
+====
+New user accounts or changes to existing accounts can be requested by <customer-name> or with the approval of <customer-name> only.
+====

@@ -1,0 +1,34 @@
+== Downtime for maintenance
+Every month there is a scheduled down time for the maintenance and installation of a new software update for your FirstSpirit Cloud Environment. 
+The down time is scheduled to deploy the updates between 6 am and 8 am UTC.
+
+* All users will get informed of any down time via email at least seven days upfront.
+* Urgent Security Patches can be rolled-out immediately and regardless of the patchday.
+* There are no Patch Days or Down Times in December.
+ 
+[underline]#*Down time/schedule information*#
+
+[options="header", cols="40,60",width="100%"]
+.Schedule information
+|=======
+|FirstSpirit™ Cloud instance |Date
+|Production |Last Wednesday of the month
+|Development \|Quality Assurance |Second to last Wednesday of the month
+|=======
+
+[options="header", cols="40,60",width="100%"]
+.Timezones
+|=======
+|Timezone |Time
+
+|*UTC* _Coordinated Universal Time_ 
+|6 am to 8 am 
+
+|*CET* _Central European Time_ +
+_Berlin, Rome, Amsterdam_
+|7 am to 9 am 
+
+|*CEST* _Central European Summer Time_ +
+_Berlin, Rome, Amsterdam_
+|8 am to 10 am
+|=======

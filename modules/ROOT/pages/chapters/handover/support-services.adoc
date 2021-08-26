@@ -1,0 +1,18 @@
+[[our_support_services]]
+== Our Support Services
+=== Technical Support - Availability
+Our Technical Support is available from Monday to Friday (except on federal holidays), between 9.00 am and 6.00 pm. 
+
+=== High Availability - 24/7 Support
+Our 24/7 Support may apply if you agreed on this in your software maintenance agreement.
+
+=== Priority
+When submitting a support request you are able to assign a priority.
+This priority is to be in accordance with the service categories.
+The priority you choose will be checked for reasonability by the Technical Support and may be changed.
+If you do not assign a priority we automatically assume an average priority.
+
+[NOTE]
+====
+For more information please have a look at https://www.e-spirit.com/en/services/onboarding-support/priorities-and-service-categories/[Priorities & Service Categories].
+====

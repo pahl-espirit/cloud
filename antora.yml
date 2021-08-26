@@ -1,0 +1,5 @@
+name: cloud
+title: FirstSpirit Cloud
+version: '1.0'
+nav:
+- modules/ROOT/nav.adoc

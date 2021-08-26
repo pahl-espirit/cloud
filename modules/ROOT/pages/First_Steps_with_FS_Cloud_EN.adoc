@@ -1,0 +1,57 @@
+= First Steps with FirstSpirit Cloud
+e-Spirit AG
+{docdate}
+include::variables.adoc[]
+
+// Get Started
+include::chapters/handover/get-started.adoc[]
+
+// System URLs
+include::chapters/handover/system-urls.adoc[]
+
+// Roles and Permissions
+include::chapters/handover/roles-and-permissions.adoc[]
+
+// Delivery Strategy
+include::chapters/handover/delivery-strategy.adoc[]
+
+// CaaS
+include::chapters/handover/caas.adoc[]
+
+// Navigation Service
+include::chapters/handover/navigation-service.adoc[]
+
+// SmartSearch
+include::chapters/handover/smartsearch.adoc[]
+
+// Intelligent Content Engine (ICE)
+include::chapters/handover/ice.adoc[]
+
+// TranslationStudio
+include::chapters/handover/translationstudio.adoc[]
+
+// CDN
+include::chapters/handover/cdn.adoc[]
+
+// following chapters are moved to the Development in the Cloud documentation
+
+// Development
+// include::chapters/handover/development.adoc[]
+
+// Module Development
+// include::chapters/handover/module-development.adoc[]
+
+// Guidelines
+// include::chapters/handover/guidelines.adoc[]
+
+// Downtime for maintenance
+include::chapters/handover/downtime-maintenance.adoc[]
+
+// ContentConnect Integration
+include::chapters/handover/ecom.adoc[]
+
+// Our Support Services
+include::chapters/handover/support-services.adoc[]
+
+// Customer Success Management
+include::chapters/handover/csm.adoc[]

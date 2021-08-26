@@ -1,0 +1,32 @@
+== ContentConnect Integrations
+FirstSpirit offers the possibility to integrate 3rd-party applications.
+The following subchapters describe three of the most frequently used online services and provide further information about them.
+
+=== ContentConnect for Salesforce
+ContentConnect for Salesforce Commerce Cloud integrates Cloud-based e-commerce technology into FirstSpirit, thus enabling editors to combine product information with editorial content.
+Using the proven FirstSpirit user interface, editors can access product data, create customized content and preview the final web page before it is published.
+
+[NOTE]
+====
+For further information please have a look at https://docs.e-spirit.com/ecom/contentconnect-salesforce/ContentConnect_Documentation_EN.html[ContentConnect for Salesforce].
+====
+
+=== FirstSpirit Connect for SAP Commerce Cloud
+ContentConnect for SAP Commerce Cloud permits convenient searches from within the FirstSpirit editing interface for products in the external product information management (PIM) systems.
+Currently, the ContentConnect for SAP Commerce Cloud module is designed for the hybris solution, 
+but the generic approach of the module also allows the project-specific connection to other e-commerce and PIM systems.
+
+[NOTE]
+====
+For further information please have a look at https://docs.e-spirit.com/ecom/fsconnect-sap/FirstSpirit_Connect_SAP_Documentation_EN.html[FirstSpirit Connect for SAP Commerce Cloud].
+====
+
+=== ContentConnect for Spryker Commerce OS
+ContentConnect for Spryker allows editors to combine product information with editorial content and deliver it via Spryker.
+This allows product data to be accessed directly via the FirstSpirit user interface and enables the integration for the editor to individually design all content.
+The website can be checked via a preview function, before publication.
+
+[NOTE]
+====
+For further information please have a look at https://docs.e-spirit.com/ecom/contentconnect-spryker/ContentConnect_Spryker_Documentation_EN.html[ContentConnect for Spryker Commerce OS].
+====

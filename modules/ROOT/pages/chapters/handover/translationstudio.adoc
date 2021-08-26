@@ -1,0 +1,16 @@
+[[translationstudio]]
+== TranslationStudio
+
+[IMPORTANT]
+====
+This service is usage-based.
+A valid license is required.
+====
+
+The next level of translation management. 
+TranslationStudio is AI-based and also offers out-of-the-box TMS connectors such as Across, memoQ and many more.
+
+[NOTE]
+====
+For more information please have a look at https://docs.e-spirit.com/cloud/translationstudio/TranslationStudio_Editor_Manual_EN.html[TranslationStudio].
+====

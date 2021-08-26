@@ -1,0 +1,10 @@
+[[delivery_strategy]]
+== Delivery strategy
+Currently the content can be published (via push strategy) in the S3 bucket from AWS.
+Files such as HTML, CSS, JavaScript and media, i.e. everything without server-side-logic, can be stored here.
+The <<caas,Content as a Service>> can be used for the pull strategy and embedded in its own (hybrid approach) applications.
+
+[NOTE]
+====
+For further information please have a look at <<cdn,CDN>>.
+====

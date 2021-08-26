@@ -1,0 +1,25 @@
+[[navigation_service]]
+== Navigation Service 
+
+[IMPORTANT]
+====
+This service is usage-based.
+A valid CaaS license is required.
+====
+
+FirstSpirit provides its own template-based https://docs.e-spirit.com/odfs/tutorials/erste-projekt/seitenvorlage-e/navigation/index.html[navigation function] for statically generated pages.
+In the modern headless world, a different solution is needed, one that seamlessly integrates a dynamic mapping between a navigation route and the corresponding content behind it.
+
+[NOTE]
+====
+For further information please have a look at https://docs.e-spirit.com/module/navigation-service-fsm/Navigation_Service_FSM_Documentation_EN.html[Navigation Service].
+====
+
+=== Navigation Service URLs
+
+* *Development (DEV)* +
+\https://<customer>-dev-navigationservice.e-spirit.cloud
+* *Quality Assurance (QA)* +
+\https://<customer>-qa-navigationservice.e-spirit.cloud
+* *Production (PROD)* +
+\https://<customer>-prod-navigationservice.e-spirit.cloud
