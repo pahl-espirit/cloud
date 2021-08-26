@@ -12,6 +12,7 @@
 :title-logo: firstspirit-logo.png
 :sectnums:
 :source-highlighter: coderay
+:imagesdir: ../images
 ifdef::backend-pdf[]
 :pagenums:
 :pygments-style: bw

@@ -43,7 +43,7 @@ On localhost all projects will be listed; except the current master project.
 ====
 
 .Template Transport combobox in SiteArchitect
-image::images/template_transport.png[]
+image::template_transport.png[]
 
 The target project needs to have a permission group Template Distribution and the currently logged in user needs to be a member of this group. +
 The transport will be managed by a FirstSpirit Service. 
@@ -58,7 +58,7 @@ Which Stage is allowed to deploy to other Stages can be configured via Template 
 The default behaviour ist `*menu:DEV[QA>PROD]*`.
 
 .Target Projects in SiteArchitect
-image::images/target_projects.png[]
+image::target_projects.png[]
 
 Templates are not treated as Artifacts and they are not under external version control.
 Therefore, it is not possible to downgrade to earlier versions of the Templates with this mechanism.
@@ -68,10 +68,10 @@ Therefore, it is not possible to downgrade to earlier versions of the Templates 
 To use the Toolbar in a project you'll need to add a project app to the desired master project in the server manager.
 
 .ServerManager - Edit Project project components
-image:images/projectcomponents.png[]
+image:projectcomponents.png[]
 
 .Template Distribution editing in Server Manager
-image::images/template_distribution.png[]
+image::template_distribution.png[]
 
 Username & Password::
 The username and password should be predefined in existing projects.

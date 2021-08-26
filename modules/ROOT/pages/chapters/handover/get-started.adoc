@@ -20,7 +20,7 @@ After your account is created, you will get an email to activate your account fi
 * Please open the URL https://accounts.e-spirit.cloud/
 +
 .Password Self Service
-image::images/pw_self_service.png[]
+image::pw_self_service.png[]
 
 * Please enter your email address, which represents your FirstSpirit user name (e.g \myEmailAdress@e-spirit.com)
 * Afterwards you will receive an email to set your password +

@@ -117,7 +117,7 @@ _This step is necessary because of our Service Level Agreement._
 === Module Development Pipeline
 
 .Module development pipeline
-image::images/dev_pipeline.png[]
+image::dev_pipeline.png[]
 
 === Setup your Maven tool to use e-Spirit Cloud Artifactory 
 
